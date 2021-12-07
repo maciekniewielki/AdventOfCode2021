@@ -14,3 +14,8 @@ def input_as_ints(filename):
     lines = input_as_lines(filename)
     line_as_int = lambda l: int(l.rstrip('\n'))
     return list(map(line_as_int, lines))
+
+def input_as_one_line_ints(filename):
+    """Return a list where it splits the file by comma and converts each entry into an integer"""
+    entries = input_as_string(filename).split(",")
+    return list(map(int, entries))

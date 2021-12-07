@@ -46,7 +46,7 @@ def solve2(data, batch_size, batches):
 
 
 # IO
-a = [int(x) for x in input_as_string("input.txt").split(",")]
+a = input_as_one_line_ints("input.txt")
 
 # 1st
 print(solve1(a))
